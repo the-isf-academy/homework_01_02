@@ -1,6 +1,8 @@
 # Homework 01_02 Practice with functions
 # Author: Your name
 
+from pathlib import Path
+
 def get_words():
     """
     Reads the 10,000 most common English words from a file and returns them as a list.
@@ -20,7 +22,7 @@ def has_five_letters(word):
 
 def count_five_letter_words(list_of_words):
     """
-    Counts how many of `words` have five letters.
+    Counts how many of list_of_words have five letters.
     input: list of str
     output: int
     """
@@ -43,9 +45,8 @@ def average_word_length(list_of_words):
     pass
 
 
-if __name__ == "__main__": 
+if __name__ == "__main__":
     words = get_words()
     print("Useless facts about the 10,000 most common words in English:")
-    print("{} of these words have five letters.".format(count_five_letter_words(words))
+    print("{} of these words have five letters.".format(count_five_letter_words(words)))
     print("The average word length is {}".format(average_word_length(words)))
-
